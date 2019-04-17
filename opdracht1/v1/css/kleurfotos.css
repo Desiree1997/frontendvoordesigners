@@ -9,19 +9,38 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
 img {
     width: 19%;
     height: 350px;
     margin: 6px;
 }
 
+section {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 25px;
+    margin: 5px;
+}
+
+label {
+    background-color: cornsilk;
+    padding: 8px;
+    border-radius: 10px;
+    padding-right: 28px;
+}
+
+input {
+    visibility: hidden;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-input[type='checkbox'] {
-background-color: aqua;
- margin: 100px;
 }
