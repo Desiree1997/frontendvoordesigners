@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: #f5f5f5;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -7,32 +7,62 @@ body {
 h1 {
     font-family: cursive;
     text-align: center;
+    font: "Nexa Light";
 }
 
 h2 {
     margin: 0px;
     margin-bottom: 15px;
+    color: #ffffff;
 }
 
 img {
     width: 19%;
     height: 350px;
-    margin: 6px;
+    margin-bottom: 2px;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
 }
 
 section {
-    background-color: bisque;
+    background-color: #5c9cc6;
     border-radius: 10px;
     padding: 20px;
     padding-bottom: 25px;
-    margin: 5px;
+    margin: 30px;
+    margin-left: 120px;
+    width: 60%;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
 }
 
 label {
-    background-color: cornsilk;
+    background-color: #ffffff;
     padding: 8px;
     border-radius: 10px;
     padding-right: 28px;
+}
+
+label:hover {
+    background-color: #cee0ed;
+}
+
+label:active {
+    background-color: aqua;
+}
+
+label:focus {
+    background-color: aqua;
+}
+
+label:checked {
+    border-color: aqua;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: aqua;
 }
 
 input {
