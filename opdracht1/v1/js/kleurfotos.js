@@ -5,9 +5,15 @@ function showPaarsPlaatje() {
 
     var laatPaarsZien = document.querySelectorAll(".paars");
 
+    if (zichtbaar == true) {
     for (i = 0; i < laatPaarsZien.length; i++) {
         laatPaarsZien[i].classList.toggle('zichtbaar');
     }
+    }
+    else {
+        for (i = 0; i < laatPaarsZien.length; i++) {
+        laatPaarsZien[i].classList.add('zichtbaar');
+    }}
 }
 
 kleurPaars.addEventListener("click", showPaarsPlaatje);
