@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-    font-family: cursive;
+    font-family: 'Nexa Bold';
     text-align: center;
-    font: "Nexa Light";
 }
 
 h2 {
+    font-family: 'Nexa Light';
     margin: 0px;
     margin-bottom: 15px;
     color: #ffffff;
@@ -43,6 +43,7 @@ label {
     padding: 8px;
     border-radius: 10px;
     padding-right: 28px;
+    font-family: 'Nexa Light';
 }
 
 label:hover {
