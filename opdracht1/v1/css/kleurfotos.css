@@ -4,6 +4,9 @@ body {
     margin-right: 100px;
 }
 
+main {
+}
+
 h1 {
     font-family: 'Nexa Bold';
     text-align: center;
@@ -34,12 +37,11 @@ section {
     padding-bottom: 25px;
     margin: 30px;
     margin-left: 120px;
-    width: 60%;
+    width: 50%;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
 }
 
 label {
-    background-color: #ffffff;
     padding: 8px;
     border-radius: 10px;
     padding-right: 12px;
@@ -54,32 +56,36 @@ label:hover {
     background-color: #cee0ed;
 }
 
-[name="Paars"]:checked+label {
+[name="Paars"]+label {
     background-color: mediumpurple;
 }
 
-[name="Roze"]:checked+label {
+[name="Roze"]+label {
     background-color: lightpink;
 }
 
-[name="Blauw"]:checked+label {
+[name="Blauw"]+label {
     background-color: lightcyan;
 }
 
-[name="Groen"]:checked+label {
+[name="Groen"]+label {
     background-color: lightgreen;
 }
 
-[name="Oranje"]:checked+label {
+[name="Oranje"]+label {
     background-color: coral;
 }
 
-[name="Geel"]:checked+label {
+[name="Geel"]+label {
     background-color: lightyellow;
 }
 
-[name="Rood"]:checked+label {
+[name="Rood"]+label {
     background-color: lightcoral;
+}
+
+:checked+label {
+    background-color: #ffffff;
 }
 
 .zichtbaar {
