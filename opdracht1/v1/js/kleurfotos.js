@@ -1,22 +1,49 @@
-var kleur = document.querySelector("body > header > section > label:nth-child(4) > input[type="checkbox"]");
+var i;
+var kleurPaars = document.querySelector("body > header > section > label:nth-child(3)");
 
-function showPlaatje() {
+function showPaarsPlaatje() {
 
-    var laatZien = document.querySelector(".Paars");
+    var laatPaarsZien = document.querySelectorAll(".paars");
 
-    document.laatZien.display = "visible";
+    for (i = 0; i < laatPaarsZien.length; i++) {
+        laatPaarsZien[i].classList.toggle('zichtbaar');
+    }
 }
-kleur.addEventListener("click", showPlaatje);
+
+kleurPaars.addEventListener("click", showPaarsPlaatje);
 
 
+var kleurRoze = document.querySelector("body > header > section > label:nth-child(5)");
+
+function showRozePlaatje() {
+
+    var laatRozeZien = document.querySelectorAll(".roze");
+
+    for (i = 0; i < laatRozeZien.length; i++) {
+        laatRozeZien[i].classList.toggle('zichtbaar');
+    }
+}
+
+kleurRoze.addEventListener("click", showRozePlaatje);
 
 /*
-var kleur = document.querySelector("value="Paars"");
+var i;
+var kleurPaars = document.querySelector("body > header > section > label:nth-child(3)");
 
-function showPlaatje() {
+function showPaarsPlaatje() {
 
-    var verander = document.querySelector(".laatZien");
+    var laatPaarsZien = document.querySelectorAll(".paars");
 
-    document.getElementsByName('Paars').style.display = "block";
+
+    if (kleurPaars.checked === true) {
+
+    }
+
+    else {
+        for (i = 0; i < laatPaarsZien.length; i++) {
+            laatPaarsZien[i].classList.toggle('paars');
+        }
+    }
 }
-kleur.addEventListener("click", showPlaatje);
+kleurPaars.addEventListener("click", showPaarsPlaatje);
+*/

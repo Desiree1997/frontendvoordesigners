@@ -42,36 +42,47 @@ label {
     background-color: #ffffff;
     padding: 8px;
     border-radius: 10px;
-    padding-right: 28px;
+    padding-right: 12px;
     font-family: 'Nexa Light';
-}
-
-label:hover {
-    background-color: #cee0ed;
-}
-
-label:active {
-    background-color: aqua;
-}
-
-label:focus {
-    background-color: aqua;
-}
-
-label:checked {
-    border-color: aqua;
-}
-
-input[type="checkbox"]:checked+label {
-    background-color: aqua;
 }
 
 input {
     visibility: hidden;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+label:hover {
+    background-color: #cee0ed;
 }
+
+[name="Paars"]:checked+label {
+    background-color: mediumpurple;
+}
+
+[name="Roze"]:checked+label {
+    background-color: lightpink;
+}
+
+[name="Blauw"]:checked+label {
+    background-color: lightcyan;
+}
+
+[name="Groen"]:checked+label {
+    background-color: lightgreen;
+}
+
+[name="Oranje"]:checked+label {
+    background-color: coral;
+}
+
+[name="Geel"]:checked+label {
+    background-color: lightyellow;
+}
+
+[name="Rood"]:checked+label {
+    background-color: lightcoral;
+}
+
+.zichtbaar {
+    display: none;
+}
+
