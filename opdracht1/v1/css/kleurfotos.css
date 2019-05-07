@@ -48,35 +48,35 @@ label:hover {
     background-color: #cee0ed;
 }
 
-[name="Paars"]+label {
+[name="Paars"]:checked+label {
     background-color: mediumpurple;
 }
 
-[name="Roze"]+label {
+[name="Roze"]:checked+label {
     background-color: lightpink;
 }
 
-[name="Blauw"]+label {
+[name="Blauw"]:checked+label {
     background-color: lightcyan;
 }
 
-[name="Groen"]+label {
+[name="Groen"]:checked+label {
     background-color: lightgreen;
 }
 
-[name="Oranje"]+label {
+[name="Oranje"]:checked+label {
     background-color: coral;
 }
 
-[name="Geel"]+label {
+[name="Geel"]:checked+label {
     background-color: lightyellow;
 }
 
-[name="Rood"]+label {
+[name="Rood"]:checked+label {
     background-color: lightcoral;
 }
 
-:checked+label {
+label {
     background-color: #ffffff;
 }
 
