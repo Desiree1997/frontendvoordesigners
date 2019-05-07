@@ -29,7 +29,7 @@ section {
     padding-bottom: 25px;
     margin: 30px;
     margin-left: 120px;
-    width: 50%;
+    width: 56%;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
 }
 
@@ -46,6 +46,10 @@ input {
 
 label:hover {
     background-color: #cee0ed;
+}
+
+[name="alles"]:checked+label {
+    background: linear-gradient(120deg, mediumpurple, lightpink, lightcyan, lightgreen, coral, lightyellow, lightcoral);
 }
 
 [name="Paars"]:checked+label {
