@@ -1,4 +1,24 @@
 var i;
+var alleKleuren = document.querySelector("body > header > section > label:nth-child(3)");
+
+function showAllePlaatjes() {
+
+    var laatAlleZien = document.querySelector(".alles");
+
+    if (document.querySelector('main').classList.contains('alles')) {
+        laatAlleZien[i].classList.remove('alles');
+    } else {
+        laatAlleZien[i].classList.add('alles');
+        laatPaarsZien[i].classList.toggle('zichtbaar');
+    }
+}
+
+alleKleuren.addEventListener("click", showAllePlaatjes);
+
+
+
+
+
 var kleurPaars = document.querySelector("body > header > section > label:nth-child(5)");
 
 function showPaarsPlaatje() {
@@ -7,7 +27,6 @@ function showPaarsPlaatje() {
 
     for (i = 0; i < laatPaarsZien.length; i++) {
         laatPaarsZien[i].classList.toggle('zichtbaar');
-        laatPaarsZien[i].classList.remove('alles');
     }
 }
 
@@ -25,7 +44,6 @@ function showRozePlaatje() {
 
     for (i = 0; i < laatRozeZien.length; i++) {
         laatRozeZien[i].classList.toggle('zichtbaar');
-        laatRozeZien[i].classList.remove('alles');
     }
 }
 
@@ -43,7 +61,6 @@ function showBlauwPlaatje() {
 
     for (i = 0; i < laatBlauwZien.length; i++) {
         laatBlauwZien[i].classList.toggle('zichtbaar');
-        laatBlauwZien[i].classList.remove('alles');
     }
 }
 
@@ -61,7 +78,6 @@ function showGroenPlaatje() {
 
     for (i = 0; i < laatGroenZien.length; i++) {
         laatGroenZien[i].classList.toggle('zichtbaar');
-        laatGroenZien[i].classList.remove('alles');
     }
 }
 
@@ -79,7 +95,6 @@ function showOranjePlaatje() {
 
     for (i = 0; i < laatOranjeZien.length; i++) {
         laatOranjeZien[i].classList.toggle('zichtbaar');
-        laatOranjeZien[i].classList.remove('alles');
     }
 }
 
@@ -97,7 +112,6 @@ function showGeelPlaatje() {
 
     for (i = 0; i < laatGeelZien.length; i++) {
         laatGeelZien[i].classList.toggle('zichtbaar');
-        laatGeelZien[i].classList.remove('alles');
     }
 }
 
@@ -115,27 +129,10 @@ function showRoodPlaatje() {
 
     for (i = 0; i < laatRoodZien.length; i++) {
         laatRoodZien[i].classList.toggle('zichtbaar');
-        laatRoodZien[i].classList.remove('alles');
     }
 }
 
 kleurRood.addEventListener("click", showRoodPlaatje);
 
 
-
-
-
-
-var alleKleuren = document.querySelector("body > header > section > label:nth-child(3)");
-
-function showAllePlaatjes() {
-
-    var laatAlleZien = document.querySelectorAll(".alles");
-
-    for (i = 0; i < laatAlleZien.length; i++) {
-        laatAlleZien[i].classList.toggle('zichtbaar');
-    }
 }
-
-alleKleuren.addEventListener("click", showAllePlaatjes);
-
