@@ -1,4 +1,8 @@
 # frontend voor designers - opdracht 1
+Oke ik ga dit even uitproberen.
+
+Ik ben begonnen met de html. Alle checkboxes en plaatjes toevoegen. Daarna ben ik dit gaan stylen in css totdat ik helemaal tevreden was over de uitstraling. Daarna ben ik bezig geweest met js. Eerst wilde ik alleen de kleur plaatjes laten zien wanneer ik op die kleur klikte. Later toen dit werkte heb ik de knop alles toegevoegd.
+
 Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
 
 Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
