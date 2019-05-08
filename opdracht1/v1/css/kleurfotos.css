@@ -95,15 +95,15 @@ img {
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
 }
 
-.onzichtbaar {
-    display: none;
+.zichtbaar {
+    display: block;
 }
 
 .alles img {
     display: block;
 }
 
-.allestweeonzichtbaar {
+img {
     display: none;
 }
 

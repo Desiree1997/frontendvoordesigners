@@ -5,14 +5,8 @@ var alleKleuren = document.querySelector("body > header > section > label:nth-ch
 
         var laatAlleZien = document.querySelector("main");
 
-        laatAlleZien.classList.add('alles');
-        allePlaatjes = document.querySelectorAll('img');
+        laatAlleZien.classList.toggle('alles');
 
-        for (i = 0; i < allePlaatjes.length; i++) {
-        //laatPaarsZien[i].classList.add('zichtbaar');
-            allePlaatjes[i].classList.add('onzichtbaar');
-
-        }
     }
 
 alleKleuren.addEventListener("click", showAllePlaatjes);
@@ -26,12 +20,13 @@ var kleurPaars = document.querySelector("body > header > section > label:nth-chi
 function showPaarsPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    //document.querySelector[name="alles"].checked.remove(:checked);
 
     var laatPaarsZien = document.querySelectorAll(".paars");
 
     for (i = 0; i < laatPaarsZien.length; i++) {
         //laatPaarsZien[i].classList.add('onzichtbaar');
-        laatPaarsZien[i].classList.toggle('onzichtbaar');
+        laatPaarsZien[i].classList.toggle('zichtbaar');
 
     }
 }
@@ -52,7 +47,7 @@ function showRozePlaatje() {
 
     for (i = 0; i < laatRozeZien.length; i++) {
         //laatRozeZien[i].classList.add('onzichtbaar');
-        laatRozeZien[i].classList.toggle('onzichtbaar');
+        laatRozeZien[i].classList.toggle('zichtbaar');
     }
 }
 
@@ -72,7 +67,7 @@ function showBlauwPlaatje() {
 
     for (i = 0; i < laatBlauwZien.length; i++) {
         //laatBlauwZien[i].classList.add('onzichtbaar');
-        laatBlauwZien[i].classList.toggle('onzichtbaar');
+        laatBlauwZien[i].classList.toggle('zichtbaar');
     }
 }
 
@@ -92,7 +87,7 @@ function showGroenPlaatje() {
 
     for (i = 0; i < laatGroenZien.length; i++) {
         //laatGroenZien[i].classList.add('onzichtbaar');
-        laatGroenZien[i].classList.toggle('onzichtbaar');
+        laatGroenZien[i].classList.toggle('zichtbaar');
     }
 }
 
@@ -112,7 +107,7 @@ function showOranjePlaatje() {
 
     for (i = 0; i < laatOranjeZien.length; i++) {
         //laatOranjeZien[i].classList.add('onzichtbaar');
-        laatOranjeZien[i].classList.toggle('onzichtbaar');
+        laatOranjeZien[i].classList.toggle('zichtbaar');
     }
 }
 
@@ -132,7 +127,7 @@ function showGeelPlaatje() {
 
     for (i = 0; i < laatGeelZien.length; i++) {
         //laatGeelZien[i].classList.add('onzichtbaar');
-        laatGeelZien[i].classList.toggle('onzichtbaar');
+        laatGeelZien[i].classList.toggle('zichtbaar');
     }
 }
 
@@ -152,7 +147,7 @@ function showRoodPlaatje() {
 
     for (i = 0; i < laatRoodZien.length; i++) {
         //laatRoodZien[i].classList.add('onzichtbaar');
-        laatRoodZien[i].classList.toggle('onzichtbaar');
+        laatRoodZien[i].classList.toggle('zichtbaar');
     }
 }
 
