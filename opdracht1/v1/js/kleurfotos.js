@@ -5,8 +5,15 @@ var alleKleuren = document.querySelector("body > header > section > label:nth-ch
 
         var laatAlleZien = document.querySelector("main");
 
-        laatAlleZien.classList.toggle('alles');
+        document.getElementById("Paars").checked = false;
+        document.getElementById("Roze").checked = false;
+        document.getElementById("Blauw").checked = false;
+        document.getElementById("Groen").checked = false;
+        document.getElementById("Oranje").checked = false;
+        document.getElementById("Geel").checked = false;
+        document.getElementById("Rood").checked = false;
 
+        laatAlleZien.classList.toggle('alles');
     }
 
 alleKleuren.addEventListener("click", showAllePlaatjes);
@@ -20,7 +27,7 @@ var kleurPaars = document.querySelector("body > header > section > label:nth-chi
 function showPaarsPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
-    //document.querySelector[name="alles"].checked.remove(:checked);
+    document.getElementById("alles").checked = false;
 
     var laatPaarsZien = document.querySelectorAll(".paars");
 
@@ -42,6 +49,7 @@ var kleurRoze = document.querySelector("body > header > section > label:nth-chil
 function showRozePlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatRozeZien = document.querySelectorAll(".roze");
 
@@ -62,6 +70,7 @@ var kleurBlauw = document.querySelector("body > header > section > label:nth-chi
 function showBlauwPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatBlauwZien = document.querySelectorAll(".blauw");
 
@@ -82,6 +91,7 @@ var kleurGroen = document.querySelector("body > header > section > label:nth-chi
 function showGroenPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatGroenZien = document.querySelectorAll(".groen");
 
@@ -102,6 +112,7 @@ var kleurOranje = document.querySelector("body > header > section > label:nth-ch
 function showOranjePlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatOranjeZien = document.querySelectorAll(".oranje");
 
@@ -122,6 +133,7 @@ var kleurGeel = document.querySelector("body > header > section > label:nth-chil
 function showGeelPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatGeelZien = document.querySelectorAll(".geel");
 
@@ -142,6 +154,7 @@ var kleurRood = document.querySelector("body > header > section > label:nth-chil
 function showRoodPlaatje() {
 
     document.querySelector('main').classList.remove('alles');
+    document.getElementById("alles").checked = false;
 
     var laatRoodZien = document.querySelectorAll(".rood");
 
