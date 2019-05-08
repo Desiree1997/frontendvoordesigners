@@ -13,7 +13,8 @@ Later toen dit werkte heb ik de knop alles toegevoegd.
 
 Demo 3: 
 
-Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
+Ik weet niet hoe het zit met die link....
+
 
 Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
 
