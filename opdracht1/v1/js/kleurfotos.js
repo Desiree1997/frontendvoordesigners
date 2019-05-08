@@ -1,15 +1,14 @@
 var i;
-var alleKleuren = document.querySelector("body > header > section > label:nth-child(3)");
 
-function showAllePlaatjes() {
+if (document.querySelector('main').classList.contains('.alles')) {
 
-    var laatAlleZien = document.querySelector(".alles");
+    var alleKleuren = document.querySelector("body > header > section > label:nth-child(3)");
 
-    if (document.querySelector('main').classList.contains('alles')) {
-        laatAlleZien[i].classList.remove('alles');
-    } else {
-        laatAlleZien[i].classList.add('alles');
+    function showAllePlaatjes() {
+
+        var laatAlleZien = document.querySelector(".alles");
         laatPaarsZien[i].classList.toggle('zichtbaar');
+        laatPaarsZien[i].classList.toggle('alles');
     }
 }
 
@@ -17,7 +16,7 @@ alleKleuren.addEventListener("click", showAllePlaatjes);
 
 
 
-
+else {
 
 var kleurPaars = document.querySelector("body > header > section > label:nth-child(5)");
 
