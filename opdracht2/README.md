@@ -5,3 +5,5 @@ Ik wilde het plaatje van rechts naar binnen laten vliegen, maar ik kon het plaat
 [Demo 1 voor opdracht 2](https://koopreynders.github.io/frontendvoordesigners/opdracht1/v1/)
 
 file:///Users/desireevandam/Documents/GitHub/frontendvoordesigners/opdracht2/index.html
+
+opdracht2/index.html
