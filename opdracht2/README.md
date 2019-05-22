@@ -5,5 +5,5 @@ Ik wilde het plaatje van rechts naar binnen laten vliegen, maar ik kon het plaat
 [Demo 1 voor opdracht 2](https://github.com/Desiree1997/frontendvoordesigners/blob/master/opdracht2/index.html)
 Sorry ik heb echt lopen zoeken maar heb werkelijk geen flauw idee welke link ik moet hebben.
 
-
+Daarna heb ik de keys erbij gemaakt. Dus dat je op een pijltje kan klikken om het volgende plaatje te zien.
 
