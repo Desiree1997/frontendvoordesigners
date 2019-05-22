@@ -1,3 +1,7 @@
+body {
+    font-family: 'Nexa Light';
+}
+
 h1 {
     font-family: 'Nexa Bold';
     text-align: center;
@@ -8,6 +12,7 @@ img {
     /*width: 65%;*/
     margin-left: 300px;
     float: left;
+    transition: .9s cubic-bezier(.12,-0.61,.53,.91);
 }
 
 body > div > img:nth-child(2) {
@@ -16,15 +21,21 @@ body > div > img:nth-child(2) {
 
 .offscreen {
     transform: translate(0, -700px);
-    transition: 3s;
+
 }
 
 .onscreen {
     transform: translate(0px, 800px);
-    transition: .4s;
+    transition: .5s cubic-bezier(.48,.03,.58,.97);
+}
+
+body > button:nth-child(3) {
+    margin-top: 615px;
+    margin-left: -440px;
 }
 
 button {
-    margin-top: 650px;
-    margin-left: -420px;
+    padding: 5px;
+    background-color: darkgrey;
+    margin-right: 10px;
 }
