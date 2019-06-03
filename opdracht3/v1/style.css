@@ -1,26 +1,30 @@
-*{
-  box-sizing: border-box;
-  }
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background: #eee;
     font-family: sans-serif;
 }
-main{
-  background: white;
-  margin: 0 auto;
-  padding: 2em;
-  max-width: 34em;
-  box-shadow: 0.5em 1em 0.5em -0.5em #777;
+
+main {
+    background: white;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 34em;
+    box-shadow: 0.5em 1em 0.5em -0.5em #777;
 }
 
-.loader{
-  background: lightgreen;
+.loader {
+    background: lightgreen;
 }
-.hide{
-  display: none;
+
+.hide {
+    display: none;
 }
-.show{
-  display: block
+
+.show {
+    display: block
 }
 
 /* general styles
