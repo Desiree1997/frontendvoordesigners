@@ -18,36 +18,28 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+function populateArticle(jsonObj) {
+    var recentie = jsonObj['reviews'];
+    var myArticle = document.createElement('article');
 
-function afbeelding(jsonObj) {
     var myImg = document.createElement('img');
-    myImg.textContent = jsonObj['cover'];
-    section.appendChild(myImg);
-}
+    myImg.src = jsonObj['cover'];
+    myArticle.appendChild(myImg);
 
-function populateHeader(jsonObj) {
     var myH2 = document.createElement('h2');
     myH2.textContent = jsonObj['title'];
-    section.appendChild(myH2);
-}
+    myArticle.appendChild(myH2);
 
-function genres(jsonObj) {
     var myp = document.createElement('p');
     myp.textContent = 'Genre: ' + jsonObj['genres'];
-    section.appendChild(myp);
-}
+    myArticle.appendChild(myp);
 
-function discription(jsonObj) {
     var myp = document.createElement('p');
-    myp.textContent = jsonObj['plot'];
-    section.appendChild(myp);
-}
-
-function recenties(jsonObj) {
-    var recentie = jsonObj['reviews'];
+    myp.textContent = jsonObj['simple_plot'];
+    myArticle.appendChild(myp);
 
     for (var i = 0; i < recentie.length; i++) {
-        var myArticle = document.createElement('article');
+
         var myH3 = document.createElement('h3');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
@@ -84,11 +76,8 @@ function laadHorror() {
         //functie aanroepen om van de data html te maken
         var movies = request.response;
         console.log(movies[0].title);
-        afbeelding(movies[0]);
-        populateHeader(movies[0]);
-        genres(movies[0]);
-        discription(movies[0]);
-        recenties(movies[0]);
+        populateArticle(movies[0]);
+
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
             // XMLHttpRequest timed out. Do something here.
@@ -97,7 +86,7 @@ function laadHorror() {
         request.onerror = function () {
             console.log('Fetch Error', request.status);
         }
-    }) //end: function loadimagesmetXHR();
+    }) //end:
 };
 
 function laadCrime() {
@@ -113,23 +102,10 @@ function laadCrime() {
         loaderElement.classList.add('hide');
         //functie aanroepen om van de data html te maken
         var movies = request.response;
-        afbeelding(movies[1]);
-        populateHeader(movies[1]);
-        genres(movies[1]);
-        discription(movies[1]);
-        recenties(movies[1]);
+        populateArticle(movies[1]);
+        populateArticle(movies[2]);
+        populateArticle(movies[3]);
 
-        afbeelding(movies[2]);
-        populateHeader(movies[2]);
-        genres(movies[2]);
-        discription(movies[2]);
-        recenties(movies[2]);
-
-        afbeelding(movies[3]);
-        populateHeader(movies[3]);
-        genres(movies[3]);
-        discription(movies[3]);
-        recenties(movies[3]);
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
             // XMLHttpRequest timed out. Do something here.
@@ -154,29 +130,11 @@ function laadDrama() {
         loaderElement.classList.add('hide');
         //functie aanroepen om van de data html te maken
         var movies = request.response;
-        afbeelding(movies[1]);
-        populateHeader(movies[1]);
-        genres(movies[1]);
-        discription(movies[1]);
-        recenties(movies[1]);
+        populateArticle(movies[1]);
+        populateArticle(movies[2]);
+        populateArticle(movies[3]);
+        populateArticle(movies[5]);
 
-        afbeelding(movies[2]);
-        populateHeader(movies[2]);
-        genres(movies[2]);
-        discription(movies[2]);
-        recenties(movies[2]);
-
-        afbeelding(movies[3]);
-        populateHeader(movies[3]);
-        genres(movies[3]);
-        discription(movies[3]);
-        recenties(movies[3]);
-
-        afbeelding(movies[5]);
-        populateHeader(movies[5]);
-        genres(movies[5]);
-        discription(movies[5]);
-        recenties(movies[5]);
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
             // XMLHttpRequest timed out. Do something here.
@@ -201,11 +159,8 @@ function laadThriller() {
         loaderElement.classList.add('hide');
         //functie aanroepen om van de data html te maken
         var movies = request.response;
-        afbeelding(movies[3]);
-        populateHeader(movies[3]);
-        genres(movies[3]);
-        discription(movies[3]);
-        recenties(movies[3]);
+        populateArticle(movies[3]);
+
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
             // XMLHttpRequest timed out. Do something here.
@@ -231,11 +186,8 @@ function laadAction() {
         loaderElement.classList.add('hide');
         //functie aanroepen om van de data html te maken
         var movies = request.response;
-        afbeelding(movies[4]);
-        populateHeader(movies[4]);
-        genres(movies[4]);
-        discription(movies[4]);
-        recenties(movies[4]);
+        populateArticle(movies[4]);
+
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
             // XMLHttpRequest timed out. Do something here.
@@ -260,11 +212,7 @@ function laadAdventure() {
         loaderElement.classList.add('hide');
         //functie aanroepen om van de data html te maken
         var movies = request.response;
-        afbeelding(movies[4]);
-        populateHeader(movies[4]);
-        genres(movies[4]);
-        discription(movies[4]);
-        recenties(movies[4]);
+        populateArticle(movies[4]);
 
         request.timeout = 10000; // time in milliseconds
         request.ontimeout = function (e) {
@@ -279,6 +227,21 @@ function laadAdventure() {
 
 
 
+
+function laden() {
+    var laadTekst = document.createElement('p');
+    laadTekst.textContent = "Het laden duurt erg lang. Controleer je internet verbinding.";
+    console.log(laadTekst);
+    section.appendChild(laadTekst);
+}
+
+function error() {
+    var errorTekst = document.createElement('p');
+    errorTekst.textContent = "Er is een interne fout opgetreden. Probeer het zo nog een keer.";
+    console.log(errorTekst);
+    section.appendChild(errorTekst);
+}
+
 //  request.onload = function() {
 //      console.log("request.onload: ",request.response);
 //    }
@@ -286,11 +249,12 @@ request.timeout = 10000; // time in milliseconds
 request.ontimeout = function (e) {
     // XMLHttpRequest timed out. Do something here.
     console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+    laden();
 };
 request.onerror = function () {
     console.log('Fetch Error', request.status);
 };
- //end: function loadimagesmetXHR();
+//end: function loadimagesmetXHR();
 
 
 //loader feedback eerst onzichtbaar maken
