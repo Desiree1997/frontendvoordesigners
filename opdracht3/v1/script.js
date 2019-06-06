@@ -230,16 +230,20 @@ function laadAdventure() {
 
 function laden() {
     var laadTekst = document.createElement('p');
+    var myArticle = document.createElement('article');
     laadTekst.textContent = "Het laden duurt erg lang. Controleer je internet verbinding.";
     console.log(laadTekst);
-    section.appendChild(laadTekst);
+    myArticle.appendChild(laadTekst);
+    section.appendChild(myArticle);
 }
 
 function error() {
     var errorTekst = document.createElement('p');
+    var myArticle = document.createElement('article');
     errorTekst.textContent = "Er is een interne fout opgetreden. Probeer het zo nog een keer.";
     console.log(errorTekst);
-    section.appendChild(errorTekst);
+    myArticle.appendChild(errorTekst);
+    section.appendChild(myArticle);
 }
 
 //  request.onload = function() {
