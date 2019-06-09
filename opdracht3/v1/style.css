@@ -94,3 +94,94 @@ article {
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 12, .2);
     background-color: #5c9cc6;
 }
+
+
+/*minor breakpoint*/
+
+@media (max-width: 40em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-left: 10px;
+    }
+
+    h2 {
+        grid-column: span 1;
+    }
+
+    button {
+        font-size: 0.5em;
+        margin-right: 5px;
+    }
+
+    article {
+        width: 75%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}
+
+
+/*major breakpoint 1*/
+
+@media (min-width: 40em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-left: 10px;
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+
+    button {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    article {
+        width: 70%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}
+
+/*major breakpoint 2*/
+
+@media (min-width: 70em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-left: 10px;
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+
+    button {
+        font-size: 1em;
+        margin-right: 5px;
+
+    }
+
+    article {
+        width: 75%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}
+
