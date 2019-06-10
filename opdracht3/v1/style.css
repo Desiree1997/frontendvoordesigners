@@ -10,12 +10,17 @@ main {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
 h1 {
     font-family: 'Nexa Bold';
     font-size: 4em;
     text-align: left;
     margin-left: 50px;
-    margin-right: 0px;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 8px;
     display: inline-block;
@@ -45,12 +50,11 @@ img {
 button {
     display: inline;
     margin-top: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
     background: none;
     border: none;
     padding: 10px;
-    font-size: 1em;
 }
 
 button:hover {
@@ -119,8 +123,8 @@ article {
         margin-right: 5px;
     }
 
-    .horror {
-        margin-left: 30px;
+        .adventure{
+        margin-right: 30px;
     }
 }
 
@@ -152,8 +156,9 @@ article {
         font-size: 0.8em;
         margin-right: 5px;
     }
-    .horror {
-        margin-left: 30px;
+
+    .adventure {
+        margin-right: 50px;
     }
 }
 
@@ -183,7 +188,8 @@ article {
         font-size: 1em;
         margin-right: 5px;
     }
-    .horror {
-        margin-left: 400px;
+
+    .adventure {
+        margin-right: 50px;
     }
 }
