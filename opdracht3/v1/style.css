@@ -12,7 +12,7 @@ main {
 
 h1 {
     font-family: 'Nexa Bold';
-    font-size: 4rem;
+    font-size: 4em;
     text-align: left;
     margin-left: 50px;
     margin-right: 0px;
@@ -51,11 +51,6 @@ button {
     border: none;
     padding: 10px;
     font-size: 1em;
-    float: right;
-}
-
-.horror {
-    margin-right: 50px;
 }
 
 button:hover {
@@ -104,6 +99,12 @@ article {
         grid-template-columns: 1fr;
     }
 
+    article {
+        width: 75%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
     h1 {
         font-size: 2em;
         margin-left: 10px;
@@ -118,10 +119,8 @@ article {
         margin-right: 5px;
     }
 
-    article {
-        width: 75%;
-        margin-top: 15px;
-        margin-left: 15px;
+    .horror {
+        margin-left: 30px;
     }
 }
 
@@ -134,9 +133,15 @@ article {
         grid-template-columns: 1fr 1fr;
     }
 
+    article {
+        width: 70%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
     h1 {
-        font-size: 2em;
-        margin-left: 10px;
+        font-size: 3em;
+        margin-left: 30px;
     }
 
     h2 {
@@ -144,14 +149,11 @@ article {
     }
 
     button {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-right: 5px;
     }
-
-    article {
-        width: 70%;
-        margin-top: 15px;
-        margin-left: 15px;
+    .horror {
+        margin-left: 30px;
     }
 }
 
@@ -163,25 +165,25 @@ article {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    h1 {
-        font-size: 3em;
-        margin-left: 10px;
-    }
-
-    h2 {
-        grid-column: span 3;
-    }
-
-    button {
-        font-size: 1em;
-        margin-right: 5px;
-
-    }
-
     article {
         width: 75%;
         margin-top: 15px;
         margin-left: 15px;
     }
-}
 
+    h1 {
+        font-size: 4em;
+        margin-left: 50px;
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+    button {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    .horror {
+        margin-left: 400px;
+    }
+}
