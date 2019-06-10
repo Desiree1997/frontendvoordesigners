@@ -38,23 +38,15 @@ function populateArticle(jsonObj) {
     myp.textContent = jsonObj['simple_plot'];
     myArticle.appendChild(myp);
 
+    var myH3 = document.createElement('h3');
+    myH3.textContent = 'Scores van deskundigen:';
+    myArticle.appendChild(myH3);
+
     for (var i = 0; i < recentie.length; i++) {
 
-        var myH3 = document.createElement('h3');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myList = document.createElement('ul');
-
-        myH3.textContent = 'Recentie: ' + recentie[i].id;
-        myPara1.textContent = 'Score: ' + recentie[i].score;
-
-
-        myArticle.appendChild(myH3);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
+        var myp = document.createElement('p');
+        myp.textContent = recentie[i].score + ", ";
+        myArticle.appendChild(myp);
 
         section.appendChild(myArticle);
     }
