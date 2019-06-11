@@ -1,4 +1,4 @@
-#Films 
+Films 
 
 Eerst ging ik kijken hoe ik een woord tevoorschijn kon krijgen. Daarna ging ik van alle films de titel, plot, genre en reviews tonen. 
 Toen dat werkte wilde ik een knop maken, waarmee je alle films tevoorschijn kan halen. Dit heb ik later veranderd naar de genres als knoppen en alles categoriseren. 
