@@ -6,6 +6,8 @@ Daarna ben ik mij bezig gaan houden met css en heb ik plaatjes toegevoegd. Ook h
 
 Later ben ik gaan kijken naar de mobiel versie. Voor de navigatiebalk had ik float gebruikt. Daardoor ging bij het schalen alles door de war. Dit heb ik op kunnen lossen door floatbox bij de navigatie te gebruiken. 
 
+Daarna wilde ik het ook laten werken met toetsen. Dat je bijvoorbeeld de h indrukt en alle horrorfilms tevoorschijn komen. 
+
 
 In het vak Frontend voor Designers leer je hoe je met HTML en CSS, en een beetje Javascript, snel en eenvoudig prototypes kan maken om je ontwerp ideeën te testen in een browser. We gaan animeren, responsive layouts uitproberen en interactie coderen ...
 
