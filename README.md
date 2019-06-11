@@ -4,6 +4,8 @@ Eerst ging ik kijken hoe ik een woord tevoorschijn kon krijgen. Daarna ging ik v
 Toen dat werkte wilde ik een knop maken, waarmee je alle films tevoorschijn kan halen. Dit heb ik later veranderd naar de genres als knoppen en alles categoriseren. 
 Daarna ben ik mij bezig gaan houden met css en heb ik plaatjes toegevoegd. Ook heb ik een loading en error state gemaakt.
 
+Later ben ik gaan kijken naar de mobiel versie. Voor de navigatiebalk had ik float gebruikt. Daardoor ging bij het schalen alles door de war. Dit heb ik op kunnen lossen door floatbox bij de navigatie te gebruiken. 
+
 
 In het vak Frontend voor Designers leer je hoe je met HTML en CSS, en een beetje Javascript, snel en eenvoudig prototypes kan maken om je ontwerp ideeën te testen in een browser. We gaan animeren, responsive layouts uitproberen en interactie coderen ...
 
