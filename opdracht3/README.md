@@ -26,10 +26,14 @@ De belangrijkste bevindingen hieruit waren:
   2. Laat in het begin alle films zien. Daarna kan je filteren op genre en dan pas alleen die films laten zien.
   3. Trailers laten zien bij de films.
   4. Sterretjes i.p.v. een cijfer als beoordeling.
-  
+
 Aan de hand hiervan ben ik alle films in het begin gaan tonen. Ook kan je alle films weer tevoorschijn halen als je op de h1 films klikt. 
 
 Dit is te zien bij: ["Toetsen werken en knop met alles is toegevoegd"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+
+Ik was begonnen met het toevoegen van de trailer. Ik kreeg alleen een hele rare foutmelding waar ik niet helemaal uit kon komen. Daarom was ik alvast even verder gegaan met de sterren. Eerst ging ik proberen om als de beoordeling b.v. 8 is om dan 8 sterren te laten zien. Toen dat was gelukt ging ik proberen om met halve sterren te werken om zo als de beoordeling b.v. 9 is om dan 4 en een halve ster te laten zien. Dit lukte me niet meteen, maar uiteindelijk wel (waarschijnlijk alleen niet op de mooie manier).
+
+Dit is te zien bij: ["Trailer lukte niet, nu staan er sterren" t/m "Sterren gelukt!!!!!"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
 
 # link naar verschillende versies
 [Versies](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
