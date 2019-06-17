@@ -5,13 +5,17 @@ Eerst ging ik kijken hoe ik een woord tevoorschijn kon krijgen. Daarna ging ik v
 Dit is te zien bij:["Er staat iets" tot "Loading en error state nu ook goed"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
 
 
+
 Later ben ik gaan kijken naar de mobiel versie. Voor de navigatiebalk had ik float gebruikt. Daardoor ging bij het schalen alles door de war. Dit heb ik op kunnen lossen door floatbox bij de navigatie te gebruiken.
 
 Dit is te zien bij: ["Bezig met mobiele versie" tot "Mobiel testen"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
 
+
+
 Daarna wilde ik het ook laten werken met toetsen. Dat je bijvoorbeeld de h indrukt en alle horrorfilms tevoorschijn komen. Dit lukte, alleen nu kunnen ze meerdere keren in beeld komen. Hiermee bedoel dat als je 2x op de letter h klikt, de film 2x in beeld komt. De a is voor actie en v voor avontuur.
 
 Dit is te zien bij: ["Toetsen werken en knop met alles is toegevoegd"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+
 
 
 Nadat dit me allemaal was gelukt kreeg ik als feedback van Vasillis dat ik een gemiddelde moest maken voor de beoordeling en later werden dat sterretjes. Hier ben ik toen mee bezig geweest maar niet meteen afgemaakt.
