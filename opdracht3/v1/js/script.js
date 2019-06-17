@@ -67,34 +67,94 @@ function populateArticle(jsonObj) {
         myH3.textContent = 'Beoordeling:';
         myArticle.appendChild(myH3);
 
-        (ster == 1, 3, 5, 7, 9)
-
         var average = ster / recentie.length;
-        for (var a = 0; a < average / 2; a++) {
-            // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+        for (var a = 0; a < average; a++) {
+            if (a == 1) {
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
             var sterLinks = document.createElement('img');
             sterLinks.classList = "sterren";
             sterLinks.src = "afbeeldingen/ster-links.png";
             myArticle.appendChild(sterLinks);
-            console.log(' maak een ster')
-        }
+            console.log(' maak een ster');}
 
-        (ster == 2, 4, 6, 8, 10)
-
-        var average = ster / recentie.length;
-        for (var a = 0; a < average / 2; a++) {
-            // average / 2 hierboven als je halve sterrenplaatjes dingen heb
-            var sterRechts = document.createElement('img');
+            if (a == 2) {
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterRechts = document.createElement('img');
             sterRechts.classList = "sterren";
             sterRechts.src = "afbeeldingen/ster-rechts.png";
             myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')
+            console.log(' maak een ster')}
+
+            if (a == 3){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterLinks = document.createElement('img');
+            sterLinks.classList = "sterren";
+            sterLinks.src = "afbeeldingen/ster-links.png";
+            myArticle.appendChild(sterLinks);
+            console.log(' maak een ster')}
+
+            if (a == 4){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterRechts = document.createElement('img');
+            sterRechts.classList = "sterren";
+            sterRechts.src = "afbeeldingen/ster-rechts.png";
+            myArticle.appendChild(sterRechts);
+            console.log(' maak een ster')}
+
+            if (a == 5){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterLinks = document.createElement('img');
+            sterLinks.classList = "sterren";
+            sterLinks.src = "afbeeldingen/ster-links.png";
+            myArticle.appendChild(sterLinks);
+            console.log(' maak een ster')}
+
+            if (a == 6){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterRechts = document.createElement('img');
+            sterRechts.classList = "sterren";
+            sterRechts.src = "afbeeldingen/ster-rechts.png";
+            myArticle.appendChild(sterRechts);
+            console.log(' maak een ster')}
+
+            if (a == 7){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterLinks = document.createElement('img');
+            sterLinks.classList = "sterren";
+            sterLinks.src = "afbeeldingen/ster-links.png";
+            myArticle.appendChild(sterLinks);
+            console.log(' maak een ster')}
+
+            if (a == 8){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterRechts = document.createElement('img');
+            sterRechts.classList = "sterren";
+            sterRechts.src = "afbeeldingen/ster-rechts.png";
+            myArticle.appendChild(sterRechts);
+            console.log(' maak een ster')}
+
+            if (a == 9){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterLinks = document.createElement('img');
+            sterLinks.classList = "sterren";
+            sterLinks.src = "afbeeldingen/ster-links.png";
+            myArticle.appendChild(sterLinks);
+            console.log(' maak een ster')}
+
+            if (a == 10){
+                // average / 2 hierboven als je halve sterrenplaatjes dingen heb
+                var sterRechts = document.createElement('img');
+            sterRechts.classList = "sterren";
+            sterRechts.src = "afbeeldingen/ster-rechts.png";
+            myArticle.appendChild(sterRechts);
+            console.log(' maak een ster')}
         }
 
-        myp2.textContent = ster / recentie.length;
-        myArticle.appendChild(myp2);
+        //myp2.textContent = ster / recentie.length;
+        //myArticle.appendChild(myp2);
     }
     section.appendChild(myArticle);
+
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
