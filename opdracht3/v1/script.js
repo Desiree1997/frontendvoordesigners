@@ -4,6 +4,7 @@ var requestURL = "https://koopreynders.github.io/frontendvoordesigners/opdracht3
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
+var alles = document.querySelector(".alles");
 var horror = document.querySelector(".horror");
 var crime = document.querySelector(".crime");
 var drama = document.querySelector(".drama");
@@ -18,8 +19,17 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+request.onload = function () {
+    var movies = request.response;
+    populateArticle(movies[0]);
+    populateArticle(movies[1]);
+    populateArticle(movies[2]);
+    populateArticle(movies[3]);
+    populateArticle(movies[4]);
+    populateArticle(movies[5]);
+}
+
 function populateArticle(jsonObj) {
-    var recentie = jsonObj['reviews'];
     var myArticle = document.createElement('article');
 
     var myImg = document.createElement('img');
@@ -30,30 +40,83 @@ function populateArticle(jsonObj) {
     myH2.textContent = jsonObj['title'];
     myArticle.appendChild(myH2);
 
-    var myp = document.createElement('p');
-    myp.textContent = 'Genre: ' + jsonObj['genres'];
-    myArticle.appendChild(myp);
+    var myp3 = document.createElement('p');
+    myp3.textContent = 'Genre: ' + jsonObj['genres'];
+    myArticle.appendChild(myp3);
 
-    var myp = document.createElement('p');
-    myp.textContent = jsonObj['simple_plot'];
-    myArticle.appendChild(myp);
+    var myp1 = document.createElement('p');
+    myp1.textContent = jsonObj['simple_plot'];
+    myArticle.appendChild(myp1);
 
-    var myH3 = document.createElement('h3');
-    myH3.textContent = 'Scores van deskundigen:';
-    myArticle.appendChild(myH3);
+    var recentie = jsonObj['reviews'];
+
+    var ster = 0;
+    var myp2 = document.createElement('p');
 
     for (var i = 0; i < recentie.length; i++) {
-
-        var myp = document.createElement('p');
-        myp.textContent = recentie[i].score + ", ";
-        myArticle.appendChild(myp);
-
-        section.appendChild(myArticle);
+        ster += recentie[i].score;
+        console.log(ster);
     }
+    var average = ster / recentie.length;
+    for (var a = 0; a < average / 2; a++) {
+        // average / 2 hierboven
+        //        var myImg2 = document.createElement('img');
+        //        myImg.src = "afbeelding/ster.svg";
+        //        myArticle.appendChild(myImg2);
+        console.log(' maak een ster')
+    }
+
+
+    if (ster > 0) {
+
+        var myH3 = document.createElement('h3');
+        myH3.textContent = 'Beoordeling:';
+        myArticle.appendChild(myH3);
+
+        myp2.textContent = ster / recentie.length;
+        myArticle.appendChild(myp2);
+    }
+    section.appendChild(myArticle);
+
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+function laadAlles() {
+    var request = new XMLHttpRequest();
+    request.open('get', requestURL);
+    request.responseType = 'json';
+    //request.responseType = 'text'; // now we're getting a string!
+    request.send();
+
+    request.addEventListener("load", function () {
+        console.log("request is geladen: ", request.response);
+        //als de data geladen is, mag de loader weg:
+        loaderElement.classList.add('hide');
+        //functie aanroepen om van de data html te maken
+        var movies = request.response;
+        console.log(movies[0].title);
+        populateArticle(movies[0]);
+        populateArticle(movies[1]);
+        populateArticle(movies[2]);
+        populateArticle(movies[3]);
+        populateArticle(movies[4]);
+        populateArticle(movies[5]);
+
+        request.timeout = 10000; // time in milliseconds
+        request.ontimeout = function (e) {
+            // XMLHttpRequest timed out. Do something here.
+            console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+        };
+        request.onerror = function () {
+            console.log('Fetch Error', request.status);
+        }
+    }) //end:
+};
+
+
+
+
 function laadHorror() {
     var request = new XMLHttpRequest();
     request.open('get', requestURL);
@@ -81,6 +144,44 @@ function laadHorror() {
     }) //end:
 };
 
+function hHorror(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 72: // 72 is de h
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                console.log(movies[0].title);
+                populateArticle(movies[0]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", hHorror);
+
 function laadCrime() {
     var request = new XMLHttpRequest();
     request.open('get', requestURL);
@@ -106,8 +207,47 @@ function laadCrime() {
         request.onerror = function () {
             console.log('Fetch Error', request.status);
         }
-    }) //end: function loadimagesmetXHR();
+    })
 };
+
+function cCrime(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 67: // 67 is de c
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                populateArticle(movies[1]);
+                populateArticle(movies[2]);
+                populateArticle(movies[3]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", cCrime);
 
 function laadDrama() {
     var request = new XMLHttpRequest();
@@ -138,6 +278,47 @@ function laadDrama() {
     }) //end: function loadimagesmetXHR();
 };
 
+function dDrama(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 68: // 68 is de d
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                populateArticle(movies[1]);
+                populateArticle(movies[2]);
+                populateArticle(movies[3]);
+                populateArticle(movies[5]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", dDrama);
+
+
 function laadThriller() {
     var request = new XMLHttpRequest();
     request.open('get', requestURL);
@@ -161,8 +342,45 @@ function laadThriller() {
         request.onerror = function () {
             console.log('Fetch Error', request.status);
         }
-    }) //end: function loadimagesmetXHR();
+    })
 };
+
+function tThriller(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 84: // 84 is de t
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                populateArticle(movies[3]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", tThriller);
 
 
 function laadAction() {
@@ -188,8 +406,45 @@ function laadAction() {
         request.onerror = function () {
             console.log('Fetch Error', request.status);
         }
-    }) //end: function loadimagesmetXHR();
+    })
 };
+
+function aAction(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 65: // 65 is de a
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                populateArticle(movies[4]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", aAction);
 
 function laadAdventure() {
     var request = new XMLHttpRequest();
@@ -214,8 +469,45 @@ function laadAdventure() {
         request.onerror = function () {
             console.log('Fetch Error', request.status);
         }
-    }) //end: function loadimagesmetXHR();
+    })
 };
+
+function vAdventure(e) {
+
+    switch (e.keyCode) { //met keycode kijkt hij welk getal hij van het keyboard moet pakken
+        case 86: // 86 is de v
+
+            var request = new XMLHttpRequest();
+            request.open('get', requestURL);
+            request.responseType = 'json';
+            //request.responseType = 'text'; // now we're getting a string!
+            request.send();
+            section.innerHTML = "";
+
+            request.addEventListener("load", function () {
+                console.log("request is geladen: ", request.response);
+                //als de data geladen is, mag de loader weg:
+                loaderElement.classList.add('hide');
+                //functie aanroepen om van de data html te maken
+                var movies = request.response;
+                populateArticle(movies[4]);
+
+                request.timeout = 10000; // time in milliseconds
+                request.ontimeout = function (e) {
+                    // XMLHttpRequest timed out. Do something here.
+                    console.log("ontimeout: " + request.timeout + ", het laden duurt te lang !", e);
+                };
+                request.onerror = function () {
+                    console.log('Fetch Error', request.status);
+                }
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+document.addEventListener("keydown", vAdventure);
 
 
 
@@ -256,6 +548,12 @@ request.onerror = function () {
 //loader feedback eerst onzichtbaar maken
 loaderElement.classList.add('hide');
 //actie
+alles.onclick = function () {
+    loaderElement.classList.remove('hide'); //loader wordt zichtbaar
+    section.innerHTML = ""; //main leeghalen. just in case
+    laadAlles();
+}; //end: button.onclick
+
 horror.onclick = function () {
     loaderElement.classList.remove('hide'); //loader wordt zichtbaar
     section.innerHTML = ""; //main leeghalen. just in case

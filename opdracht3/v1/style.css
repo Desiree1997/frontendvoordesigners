@@ -27,6 +27,21 @@ h1 {
     color: #5c9cc6;
 }
 
+.alles {
+    font-family: 'Nexa Bold';
+    font-size: 1em;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: #5c9cc6;
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
 h2 {
     font-family: 'Nexa Bold';
     color: white;
@@ -57,11 +72,7 @@ button {
     padding: 10px;
 }
 
-button:hover {
-    color: #5c9cc6;
-}
-
-button:active {
+.active, button:hover {
     color: #5c9cc6;
 }
 
