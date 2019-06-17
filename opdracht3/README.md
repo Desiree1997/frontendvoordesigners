@@ -33,7 +33,7 @@ Dit is te zien bij: ["Toetsen werken en knop met alles is toegevoegd"](https://g
 
 Ik was begonnen met het toevoegen van de trailer. Ik kreeg alleen een hele rare foutmelding waar ik niet helemaal uit kon komen. Daarom was ik alvast even verder gegaan met de sterren. Eerst ging ik proberen om als de beoordeling b.v. 8 is om dan 8 sterren te laten zien. Toen dat was gelukt ging ik proberen om met halve sterren te werken om zo als de beoordeling b.v. 9 is om dan 4 en een halve ster te laten zien. Dit lukte me niet meteen, maar uiteindelijk wel (waarschijnlijk alleen niet op de mooie manier).
 
-Dit is te zien bij: ["Trailer lukte niet, nu staan er sterren" en "Sterren gelukt!!!!!"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+Dit is te zien bij: ["Trailer lukte niet, nu staan er sterren" t/m "Sterren gelukt!!!!!"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
 
 # link naar verschillende versies
 [Versies](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
