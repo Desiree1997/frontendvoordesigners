@@ -35,7 +35,7 @@ Later had ik nog een test gehouden. De belangrijkste bevindingen hieruit waren:
   
 Heb de samenvatting een kopje samenvatting gegeven en ben gaan kijken hoe ik een knop met "lees meer" kan fixen. Dit bleek lastiger te zijn dan ik dacht en besloot een leraar op school om hulp te vragen. Die zei dat het linkje in de article (dus in de array) staat en dat ik die eerst moet aangeven. Ze zei dat het erg lastig was en dat het best veel werk is, wat ik eigenlijk al door had en heb het daarom laten zitten.
 
-De code hiervoor totdat ik faalde is te zien bij: ["lees meer werkt niet"]
+De code hiervoor totdat ik faalde is te zien bij: ["lees meer werkt niet"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
   
   
 # link naar verschillende versies
