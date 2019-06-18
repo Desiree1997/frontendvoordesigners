@@ -33,6 +33,10 @@ Later had ik nog een test gehouden. De belangrijkste bevindingen hieruit waren:
   1. Trailers laten zien bij de films.
   2. Aangeven wat de samenvatting is met een kopje en onder de stuk tekst een link/ knop met "lees meer" en dan de volledige uitleg tonen. 
   
+Heb de samenvatting een kopje samenvatting gegeven en ben gaan kijken hoe ik een knop met "lees meer" kan fixen. Dit bleek lastiger te zijn dan ik dacht en besloot een leraar op school om hulp te vragen. Die zei dat het linkje in de article (dus in de array) staat en dat ik die eerst moet aangeven. Ze zei dat het erg lastig was en dat het best veel werk is, wat ik eigenlijk al door had en heb het daarom laten zitten.
+
+De code hiervoor totdat ik faalde is te zien bij: ["lees meer werkt niet"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+  
   
 # link naar verschillende versies
 [Versies](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
