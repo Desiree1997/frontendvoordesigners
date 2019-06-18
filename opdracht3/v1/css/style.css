@@ -119,7 +119,7 @@ section {
 }
 
 article {
-    width: 27%;
+    width: 30%;
     margin-top: 15px;
     padding-left: 40px;
     padding-right: 40px;
@@ -158,7 +158,7 @@ article {
         padding: 5px;
     }
 
-        .adventure{
+    .adventure {
         margin-right: 1px;
     }
 }
