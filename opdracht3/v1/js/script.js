@@ -168,18 +168,6 @@ function populateArticle(jsonObj) {
         //myp2.textContent = ster / recentie.length;
         //myArticle.appendChild(myp2);
     }
-
-    var acteur = document.createElement('h3');
-    acteur.textContent = 'Acteurs:';
-    myArticle.appendChild(acteur);
-    console.log(acteur);
-
-    var mensen = jsonObj['actors'];
-    for (var i = 0; i < mensen.length; i++) {
-        var macteur = document.createElement('p');
-        macteur.textContent = mensen[i].actor_name;
-        myArticle.appendChild(macteur);
-    }
     section.appendChild(myArticle);
 
 }
