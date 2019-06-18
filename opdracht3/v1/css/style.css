@@ -50,6 +50,8 @@ h2 {
 h3 {
     font-family: 'Nexa Bold';
     color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -72,7 +74,7 @@ button {
     padding: 10px;
 }
 
-.active, button:hover {
+button:hover {
     color: #5c9cc6;
 }
 
@@ -82,6 +84,21 @@ button {
 
 .show {
     display: block;
+}
+
+.link {
+    display: inline;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background: none;
+    border: none;
+    padding: 0px;
+    color: #ffffff;
+}
+
+.link:hover {
+    color: #000000;
 }
 
 .sterren {
@@ -121,7 +138,7 @@ article {
     }
 
     article {
-        width: 75%;
+        width: 65%;
         margin-top: 15px;
         margin-left: 15px;
     }
@@ -137,11 +154,12 @@ article {
 
     button {
         font-size: 0.5em;
-        margin-right: 5px;
+        margin-right: 1px;
+        padding: 5px;
     }
 
         .adventure{
-        margin-right: 30px;
+        margin-right: 1px;
     }
 }
 

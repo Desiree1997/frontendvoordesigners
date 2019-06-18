@@ -12,6 +12,7 @@ var thriller = document.querySelector(".thriller");
 var action = document.querySelector(".action");
 var adventure = document.querySelector(".adventure");
 var loaderElement = document.querySelector(".loader");
+var lees = document.createElement('button');
 console.log("loader", loaderElement);
 
 var request = new XMLHttpRequest();
@@ -44,9 +45,23 @@ function populateArticle(jsonObj) {
     myp3.textContent = 'Genre: ' + jsonObj['genres'];
     myArticle.appendChild(myp3);
 
+    var h3 = document.createElement('h3');
+    h3.textContent = 'Samenvatting:';
+    myArticle.appendChild(h3);
+
     var myp1 = document.createElement('p');
     myp1.textContent = jsonObj['simple_plot'];
     myArticle.appendChild(myp1);
+
+    var lees = document.createElement('button');
+    lees.textContent = 'Lees meer';
+    lees.classList = "link";
+    myArticle.appendChild(lees);
+
+    var myp6 = document.createElement('p');
+    myp6.textContent = jsonObj['plot'];
+    myp6.classList = "hide";
+    myArticle.appendChild(myp6);
 
     //var video = document.createElement('video');
     //video.src = jsonObj['trailer'];
@@ -71,83 +86,93 @@ function populateArticle(jsonObj) {
         for (var a = 0; a < average; a++) {
             if (a == 1) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
-            var sterLinks = document.createElement('img');
-            sterLinks.classList = "sterren";
-            sterLinks.src = "afbeeldingen/ster-links.png";
-            myArticle.appendChild(sterLinks);
-            console.log(' maak een ster');}
+                var sterLinks = document.createElement('img');
+                sterLinks.classList = "sterren";
+                sterLinks.src = "afbeeldingen/ster-links.png";
+                myArticle.appendChild(sterLinks);
+                console.log(' maak een ster');
+            }
 
             if (a == 2) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterRechts = document.createElement('img');
-            sterRechts.classList = "sterren";
-            sterRechts.src = "afbeeldingen/ster-rechts.png";
-            myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')}
+                sterRechts.classList = "sterren";
+                sterRechts.src = "afbeeldingen/ster-rechts.png";
+                myArticle.appendChild(sterRechts);
+                console.log(' maak een ster')
+            }
 
-            if (a == 3){
+            if (a == 3) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterLinks = document.createElement('img');
-            sterLinks.classList = "sterren";
-            sterLinks.src = "afbeeldingen/ster-links.png";
-            myArticle.appendChild(sterLinks);
-            console.log(' maak een ster')}
+                sterLinks.classList = "sterren";
+                sterLinks.src = "afbeeldingen/ster-links.png";
+                myArticle.appendChild(sterLinks);
+                console.log(' maak een ster')
+            }
 
-            if (a == 4){
+            if (a == 4) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterRechts = document.createElement('img');
-            sterRechts.classList = "sterren";
-            sterRechts.src = "afbeeldingen/ster-rechts.png";
-            myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')}
+                sterRechts.classList = "sterren";
+                sterRechts.src = "afbeeldingen/ster-rechts.png";
+                myArticle.appendChild(sterRechts);
+                console.log(' maak een ster')
+            }
 
-            if (a == 5){
+            if (a == 5) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterLinks = document.createElement('img');
-            sterLinks.classList = "sterren";
-            sterLinks.src = "afbeeldingen/ster-links.png";
-            myArticle.appendChild(sterLinks);
-            console.log(' maak een ster')}
+                sterLinks.classList = "sterren";
+                sterLinks.src = "afbeeldingen/ster-links.png";
+                myArticle.appendChild(sterLinks);
+                console.log(' maak een ster')
+            }
 
-            if (a == 6){
+            if (a == 6) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterRechts = document.createElement('img');
-            sterRechts.classList = "sterren";
-            sterRechts.src = "afbeeldingen/ster-rechts.png";
-            myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')}
+                sterRechts.classList = "sterren";
+                sterRechts.src = "afbeeldingen/ster-rechts.png";
+                myArticle.appendChild(sterRechts);
+                console.log(' maak een ster')
+            }
 
-            if (a == 7){
+            if (a == 7) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterLinks = document.createElement('img');
-            sterLinks.classList = "sterren";
-            sterLinks.src = "afbeeldingen/ster-links.png";
-            myArticle.appendChild(sterLinks);
-            console.log(' maak een ster')}
+                sterLinks.classList = "sterren";
+                sterLinks.src = "afbeeldingen/ster-links.png";
+                myArticle.appendChild(sterLinks);
+                console.log(' maak een ster')
+            }
 
-            if (a == 8){
+            if (a == 8) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterRechts = document.createElement('img');
-            sterRechts.classList = "sterren";
-            sterRechts.src = "afbeeldingen/ster-rechts.png";
-            myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')}
+                sterRechts.classList = "sterren";
+                sterRechts.src = "afbeeldingen/ster-rechts.png";
+                myArticle.appendChild(sterRechts);
+                console.log(' maak een ster')
+            }
 
-            if (a == 9){
+            if (a == 9) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterLinks = document.createElement('img');
-            sterLinks.classList = "sterren";
-            sterLinks.src = "afbeeldingen/ster-links.png";
-            myArticle.appendChild(sterLinks);
-            console.log(' maak een ster')}
+                sterLinks.classList = "sterren";
+                sterLinks.src = "afbeeldingen/ster-links.png";
+                myArticle.appendChild(sterLinks);
+                console.log(' maak een ster')
+            }
 
-            if (a == 10){
+            if (a == 10) {
                 // average / 2 hierboven als je halve sterrenplaatjes dingen heb
                 var sterRechts = document.createElement('img');
-            sterRechts.classList = "sterren";
-            sterRechts.src = "afbeeldingen/ster-rechts.png";
-            myArticle.appendChild(sterRechts);
-            console.log(' maak een ster')}
+                sterRechts.classList = "sterren";
+                sterRechts.src = "afbeeldingen/ster-rechts.png";
+                myArticle.appendChild(sterRechts);
+                console.log(' maak een ster')
+            }
         }
 
         //myp2.textContent = ster / recentie.length;
@@ -155,6 +180,12 @@ function populateArticle(jsonObj) {
     }
     section.appendChild(myArticle);
 
+}
+
+function laadKnop() {
+     myp6.classList.remove('hide');
+    myp1.classlist.add('hide');
+    section.innerHTML = "";
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
@@ -624,6 +655,14 @@ request.onerror = function () {
 
 //loader feedback eerst onzichtbaar maken
 loaderElement.classList.add('hide');
+
+lees.onclick = function () {
+    myp6.classList.remove('hide');
+    myp1.classlist.add('hide');
+    section.innerHTML = "";
+    leesKnop();
+}; //end: button.onclick
+
 //actie
 alles.onclick = function () {
     loaderElement.classList.remove('hide'); //loader wordt zichtbaar
