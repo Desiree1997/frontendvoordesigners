@@ -12,7 +12,6 @@ var thriller = document.querySelector(".thriller");
 var action = document.querySelector(".action");
 var adventure = document.querySelector(".adventure");
 var loaderElement = document.querySelector(".loader");
-var lees = document.createElement('button');
 console.log("loader", loaderElement);
 
 var request = new XMLHttpRequest();
@@ -52,16 +51,6 @@ function populateArticle(jsonObj) {
     var myp1 = document.createElement('p');
     myp1.textContent = jsonObj['simple_plot'];
     myArticle.appendChild(myp1);
-
-    var lees = document.createElement('button');
-    lees.textContent = 'Lees meer';
-    lees.classList = "link";
-    myArticle.appendChild(lees);
-
-    var myp6 = document.createElement('p');
-    myp6.textContent = jsonObj['plot'];
-    myp6.classList = "hide";
-    myArticle.appendChild(myp6);
 
     //var video = document.createElement('video');
     //video.src = jsonObj['trailer'];
@@ -182,11 +171,6 @@ function populateArticle(jsonObj) {
 
 }
 
-function laadKnop() {
-     myp6.classList.remove('hide');
-    myp1.classlist.add('hide');
-    section.innerHTML = "";
-}
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
@@ -655,13 +639,6 @@ request.onerror = function () {
 
 //loader feedback eerst onzichtbaar maken
 loaderElement.classList.add('hide');
-
-lees.onclick = function () {
-    myp6.classList.remove('hide');
-    myp1.classlist.add('hide');
-    section.innerHTML = "";
-    leesKnop();
-}; //end: button.onclick
 
 //actie
 alles.onclick = function () {
