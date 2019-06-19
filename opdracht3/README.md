@@ -48,5 +48,5 @@ De code hiervoor totdat ik het weghaalde: ["acteurs toegevoegd"](https://github.
 De code van mijn eindopdracht: ["Eindopdracht helemaal af"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
   
   
-# link naar verschillende versies
+# Link naar verschillende versies
 [Versies](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
