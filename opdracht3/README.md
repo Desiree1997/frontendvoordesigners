@@ -36,6 +36,16 @@ Later had ik nog een test gehouden. De belangrijkste bevindingen hieruit waren:
 Heb de samenvatting een kopje samenvatting gegeven en ben gaan kijken hoe ik een knop met "lees meer" kan fixen. Dit bleek lastiger te zijn dan ik dacht en besloot een leraar op school om hulp te vragen. Die zei dat het linkje in de article (dus in de array) staat en dat ik die eerst moet aangeven. Ze zei dat het erg lastig was en dat het best veel werk is, wat ik eigenlijk al door had en heb het daarom laten zitten.
 
 De code hiervoor totdat ik faalde is te zien bij: ["lees meer werkt niet"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+
+Daarna heb ik als laatst nog een test gehouden. De belangrijkste bevindingen hieruit waren:
+  1. Aangeven hoelang de film in totaliteit duurt.
+  2. Wie de hoofdpersonages zijn.
+  
+Aan de hand hiervan ging ik de acteurs toevoegen. Deze had ik onder de beoordeling geplaatst, maar dit vond ik er zo lelijk uitzien dat ik het weer heb weggehaald. Ook omdat hij zei dat het eigenlijk zo ook al goed was. Het mooiste zou zijn dat je dat ook kon uitklappen, maar dat gaat mij niet lukken. 
+
+De code hiervoor totdat ik het weghaalde: ["acteurs toegevoegd"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
+
+De code van mijn eindopdracht: ["Eindopdracht helemaal af"](https://github.com/Desiree1997/frontendvoordesigners/commits/master/opdracht3)
   
   
 # link naar verschillende versies
